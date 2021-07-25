@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MainPage</title>
+	<link rel="stylesheet" type="text/css" href="css\stylemain.css">
+</head>
+
+<body>
+
+
+			<img class="img-holder" src="robot.jpg" width="100%">
+	<div class="nav-wrapper">
+		<nav>
+
+			<ul class="nav-list">
+				<li class="nav-item"><a href="robot.html">RobotArmsControll</a></li>
+				<li class="nav-item"><a href="index.html">BaseControll</a></li>
+			
+			</ul>
+
+		</nav>
+
+	</div>
+	<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "5f528060-c0c2-4e53-a52a-5248d5ee200e", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "44b46415-43df-4b5f-b47f-18cc96786be2", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

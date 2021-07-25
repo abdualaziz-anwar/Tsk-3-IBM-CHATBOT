@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!-- ------------------------------- -->
+<head>
+	<!-- ensure design is set to a responsive manner -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatable" content="IE=egde,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+
+	<title>RobotDash</title>
+	<link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+</head>
+<!-- ------------------------------- -->
+
+<body>
+	<form action="php\database.php" method="post">
+		
+	
+	<div class="img-holder">
+		<img src="robot.jpg" width="100%">
+		<h1 id="cap-1">This is for moving the Base</h1>
+		<h2 id="cap-2">Please Move Me...</h2>
+	</div>
+
+	<div class="btns">
+		<input type="submit" value="right"  class="right-btn" name="right">
+		<input type="submit" value="Left"  class="left-btn" name="Left">
+		<input type="submit" value="Up"  class="up-btn" name="Up">
+		<input type="submit" value="down"  class="down-btn" name="down">
+		<input type="submit" value="stop"  class="stop-btn" name="stop">
+	</div>
+	</form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "5f528060-c0c2-4e53-a52a-5248d5ee200e", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "44b46415-43df-4b5f-b47f-18cc96786be2", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+<!-- ------------------------------- -->
+
+</html>

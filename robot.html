@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Robots Dash</title>
+
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<!-- ------------------------>
+
+<body>
+	<form action="php\connect.php" method="post">
+
+	<div class="image-holder">
+		<img class ="main-img" src="robot.jpg" width="100%" height="100%"\>
+		<h1 id="caption-1">Choose an engine to move....</h1>
+	</div>
+
+	<div class="wrapper">
+		<p id="cap-1">Engine 1:</p>
+		<input type="range" min="0" max="100" class="slider" id="range" name="eng1" value="0">
+		<br>
+		<p id="cap-1">Engine 2:</p>
+		<input type="range" min="0" max="100" class="slider" id="range" name="eng2" value="0">
+		<br>
+		<p id="cap-1">Engine 3:</p>
+		<input type="range" min="0" max="100" class="slider" id="range" name="eng3" value="0">
+		
+		<p id="cap-1">Engine 4:</p>
+		<input type="range" min="0" max="100" class="slider" id="range" name="eng4" value="0">
+		<p id="cap-1">Engine 5:</p>
+		<input type="range" min="0" max="100" class="slider" id="range" name="eng5" value="0">
+		<br>
+		<input id="submit" style="margin-left: 35%"type="submit" value="Save" name="save"><br>
+		 <input id ="submit"style="margin-left: 36%"type="submit" value="Play" name="Play" name="0">
+
+	</div>
+	</form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "5f528060-c0c2-4e53-a52a-5248d5ee200e", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "44b46415-43df-4b5f-b47f-18cc96786be2", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+</html>
