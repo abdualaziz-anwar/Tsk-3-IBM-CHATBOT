@@ -1,0 +1,124 @@
+body{
+	margin: auto;
+}
+
+
+
+#cap-1{
+	position: absolute;
+	top: 5%;
+	color: #C0C0C0;
+	font-size: 3vw;
+
+	animation-name: cap-fade;
+	animation-duration: 0.5s;
+}
+
+@keyframes cap-fade{
+	0%{
+		opacity: 0;top: 0;
+	}
+	100%{
+		opacity: 1;top: 5%;
+	}
+}
+
+#cap-2{
+	position: absolute;
+	top: 10%;
+	color: #C0C0C0;
+	font-size: 3vw;
+}
+
+
+
+.btns{
+	position: absolute;
+	top: 20%;
+	margin: 70px;
+	padding: 50px;
+	text-align: center;
+
+}
+
+
+.right-btn{
+	position: absolute;
+	right: -90px;
+	width: 55%;
+	background-color: #C0C0C0;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 1% 2% 0% 0%;
+}
+
+.left-btn{
+	position: absolute;
+	left: -30px;
+	width: 55%;
+	background-color: #C0C0C0;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 1% 2% 0% 0%;
+}
+
+.up-btn{
+	position: absolute;
+	top: -10px;
+	width: 55%;
+	background-color: #C0C0C0;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 1% 2% 0% 0%;
+
+}
+
+.down-btn{
+	position:absolute;
+	bottom: -40px;
+	width: 55%;
+	background-color: #C0C0C0;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 1% 2% 0% 0%;
+}
+
+.stop-btn{
+	position:absolute;
+	width: 55%;
+	background-color: #C0C0C0;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 1% 2% 0% 0%;
+}
+
